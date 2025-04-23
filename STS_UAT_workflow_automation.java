@@ -248,31 +248,31 @@ public class STS_UAT_workflow_automation {
 		//--------------------------------------------------------------------------------------------- Copying the BASE TEMPLATE -----------------------------------------------------------------------------------------
 
 		
-		//Handling static dropdown after right click  & click copy -- HTML template
-//	    WebElement element5 = driver.findElement(By.xpath("//span[normalize-space()='HPLP_BASE_TEMPLATE.html']"));
-//	    Actions actions = new Actions(driver);
-//	    actions.contextClick(element5).perform();// right click on the base template
-//	    Thread.sleep(2000); // Wait for the context menu
-//
-//	    // Locate all options in the context menu
-//	    List<WebElement> options = driver.findElements(By.xpath("//div[@role='menuitem']")); 
-//	    Thread.sleep(2000);
-//	    // Click on copy
-//	    for (WebElement option : options) 
-//	    {
-//	        if(option.getText().trim().equals("Copy"))
-//	        {
-//	    	   option.click();
-//	        }
-//	    }
-//	    Thread.sleep(2000);
-//	    
-//	    String base_template_name = "BASE_Template_NG_25.2_TEST";
-//		driver.findElement(By.xpath("//input[@name='Name']")).clear();//clear the text field
-//		Thread.sleep(2000);
-//	    driver.findElement(By.xpath("//input[@name='Name']")).sendKeys(base_template_name); // re-naming
-//	    Thread.sleep(2000);
-//	    driver.findElement(By.xpath("//button[normalize-space()='Copy']")).click(); // click on copy
+	    //Handling static dropdown after right click  & click copy -- HTML template
+	    WebElement element5 = driver.findElement(By.xpath("//span[normalize-space()='HPLP_BASE_TEMPLATE.html']"));
+	    Actions actions = new Actions(driver);
+	    actions.contextClick(element5).perform();// right click on the base template
+	    Thread.sleep(2000); // Wait for the context menu
+
+	    // Locate all options in the context menu
+	    List<WebElement> options = driver.findElements(By.xpath("//div[@role='menuitem']")); 
+	    Thread.sleep(2000);
+	    // Click on copy
+	    for (WebElement option : options) 
+	    {
+	        if(option.getText().trim().equals("Copy"))
+	        {
+	    	   option.click();
+	        }
+	    }
+	    Thread.sleep(2000);
+	    
+	    String base_template_name = "BASE_Template_NG_25.2_TEST";
+		driver.findElement(By.xpath("//input[@name='Name']")).clear();//clear the text field
+		Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@name='Name']")).sendKeys(base_template_name); // re-naming
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//button[normalize-space()='Copy']")).click(); // click on copy
 
 	
 		//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
