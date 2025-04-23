@@ -18,8 +18,8 @@ public class STS_UAT_workflow_automation {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		String username = "kaustavm@naehas.com";
-		String password = "maityK@12345";
+		String username = "<NHI Bataunga>";
+		String password = "<NIKAL>";
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // globally applicable for each step
 
